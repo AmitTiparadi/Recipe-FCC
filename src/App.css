@@ -1,0 +1,80 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  background-color: black;
+  color: white; /* Optional: Set default text color to white for readability */
+}
+
+/* Ensure card and other components look good on dark background */
+.card {
+  background-color: #333; /* A slightly lighter color for contrast */
+  color: white; /* Ensures text is readable */
+}
+
+.card .card-body {
+  background-color: #444; /* Adjusts background for card body */
+}
+
+.navbar {
+  background-color: grey !important; /* Change to your preferred dark color */
+  color: white; /* Ensures text is readable */
+  border-bottom: 2.5px solid white;
+}
+
+.navbar .nav-link {
+  color: white; /* Set nav link color */
+}
+
+.navbar .nav-link.active {
+  color: #ffcc00; /* Optional: Highlight active link with a different color */
+}
+
+/* For dropdown items */
+.navbar .dropdown-menu {
+  background-color: #333; /* Slightly lighter for contrast */
+}
+
+.navbar .dropdown-item {
+  color: white; /* Color for dropdown items */
+}
+
+.navbar .dropdown-item:hover {
+  background-color: #444; /* Hover effect for dropdown items */
+}
